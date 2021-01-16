@@ -1,12 +1,22 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace ValueTasks
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine("Hello World!");
+            
+        }
+
+        private static async Task<int> MaybeRunAsync(bool shouldIRun)
+        {
+            if (shouldIRun)
+                return 0;
+
+            await Task.Delay(100);
+            return 5;
         }
     }
 }

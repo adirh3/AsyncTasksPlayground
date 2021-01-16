@@ -24,7 +24,7 @@ namespace AsyncVoid
             }
             catch (DivideByZeroException)
             {
-                Console.WriteLine("This time it will happen!");
+                Console.WriteLine("This time I will catch you!");
             }
         }
 

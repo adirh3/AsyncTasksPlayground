@@ -34,6 +34,7 @@ namespace ReturnTask
         /// </summary>
         private static Task ReturnTask()
         {
+            // DON'T put try-catch on retuning Task
             return Task.Delay(500);
         }
     }
